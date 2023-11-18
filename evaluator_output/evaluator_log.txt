@@ -1,0 +1,109 @@
+Experiment 2023-11-12 23:14:41
+system prompt:
+### instruction ###
+Act as a Russian political joke evaluator. Evaluate the funniness of a political joke using an integer rating from 0 to 5. 0 means the input is not a joke. 1 means the input is not funny. 5 means the input is very funny.
+### examples ###
+Example #1
+<user>: '''Q: What is the difference between the Constitutions of the USA and USSR? Both guarantee freedom of speech. A: Yes, and the US Constitution also guarantees freedom after speech.'''
+<assistant>: '''5'''
+Example #2
+<user>: '''Q: Is it true that in the Soviet Union people do not need stereophonic equipment? A: In principle, yes. One hears exactly the same thing from all sides.'''
+<assistant>: '''4'''
+Example #3
+<user>: '''Q: What is the duration of the workday in a socialist country? A: Of course, it's an eight-hour workday: from eight am to eight pm.'''
+<assistant>: '''3'''
+Example #4
+<user>: '''Q: What is communism? A: It's when everything will be available in stores. In other words, like it was under the Czar Nikolai the Second.'''
+<assistant>: '''2'''
+Example #5
+<user>: '''Q: What two countries invaded poland in the beginning of ww2? A: Germany and Soviet Union.'''
+<assistant>: '''0'''
+system prompt tokens:295
+model: gpt-4-1106-preview, temperature: 1, top_p: 1
+rmse: 1.2649110640673518
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+           1       0.00      0.00      0.00         0
+           2       1.00      1.00      1.00         1
+           3       0.00      0.00      0.00         1
+           4       1.00      1.00      1.00         1
+           5       0.00      0.00      0.00         1
+
+    accuracy                           0.60         5
+   macro avg       0.50      0.50      0.50         5
+weighted avg       0.60      0.60      0.60         5
+
+
+Experiment 2023-11-13 12:07:11
+example data ids:[2, 10, 38, 42]
+system prompt:
+### instruction ###
+Act as a Russian political joke evaluator. Evaluate the funniness of a political joke using an integer rating from 0 to 3. 0 means the input is not a joke. 1 means the input is a joke but not funny. 3 means the input is very funny.
+### examples ###
+Example #1
+<user>: '''Q: Is it true that every Soviet soldier dreams of becoming a general? A: No, our soldiers are not that stupid. They know that generals may become MIA even in time of peace.'''
+<assistant>: '''3'''
+Example #2
+<user>: '''Q: Could an atomic bomb destroy our beloved town, Yerevan, with its splendid buildings and beautiful gardens? A: In principle, yes. But Moscow is by far a more beautiful city.'''
+<assistant>: '''2'''
+Example #3
+<user>: '''Q: Is there a difference between capitalism and communism? A: In principle, yes. In capitalism, man exploits man. In communism, it's the reverse.'''
+<assistant>: '''1'''
+Example #4
+<user>: '''Q: What two countries invaded poland in the beginning of ww2? A: Germany and Soviet Union.'''
+<assistant>: '''0'''
+system prompt tokens:256
+validation data ids:[3, 11, 39, 43]
+model: gpt-4-1106-preview, temperature: 1, top_p: 1
+rmse: 0.5
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+           1       1.00      1.00      1.00         1
+           2       0.50      1.00      0.67         1
+           3       0.00      0.00      0.00         1
+
+    accuracy                           0.75         4
+   macro avg       0.62      0.75      0.67         4
+weighted avg       0.62      0.75      0.67         4
+
+
+
+
+Experiment 2023-11-13 13:22:45
+example data ids:[2, 10, 38, 42]
+system prompt:
+### instruction ###
+Act as a Russian political joke evaluator. Evaluate the funniness of a political joke using an integer rating from 0 to 3. 0 means the input is not a joke. 1 means the input is a joke but not funny. 3 means the input is very funny.
+### examples ###
+Example #1
+<user>: '''Q: Is it true that every Soviet soldier dreams of becoming a general? A: No, our soldiers are not that stupid. They know that generals may become MIA even in time of peace.'''
+<assistant>: '''3'''
+Example #2
+<user>: '''Q: Could an atomic bomb destroy our beloved town, Yerevan, with its splendid buildings and beautiful gardens? A: In principle, yes. But Moscow is by far a more beautiful city.'''
+<assistant>: '''2'''
+Example #3
+<user>: '''Q: Is there a difference between capitalism and communism? A: In principle, yes. In capitalism, man exploits man. In communism, it's the reverse.'''
+<assistant>: '''1'''
+Example #4
+<user>: '''Q: What two countries invaded poland in the beginning of ww2? A: Germany and Soviet Union.'''
+<assistant>: '''0'''
+system prompt tokens:256
+validation data ids:[0, 1, 3, 4, 5, 6, 7, 8, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, 40, 41, 43, 44, 45, 46, 47]
+model: gpt-4-1106-preview, temperature: 1, top_p: 1
+rmse: 0.7302967433402214
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         5
+           1       0.22      0.40      0.29         5
+           2       0.50      0.38      0.43        16
+           3       0.25      0.25      0.25         4
+
+    accuracy                           0.47        30
+   macro avg       0.49      0.51      0.49        30
+weighted avg       0.50      0.47      0.48        30
+
+
+
+

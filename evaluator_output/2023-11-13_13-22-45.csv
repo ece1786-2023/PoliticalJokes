@@ -1,0 +1,31 @@
+Text,Number of Tokens,Rating out of 3,GPT Rating,Rating,Gan's Rating,Yimin's Rating
+"Q: Is it true that there are two kinds of people serving as deputies of the Supreme Soviet of the USSR, as members of the Supreme Court, and as Soviet diplomats? A: Yes, it is true. One kind is those not capable of anything at all, and the other is those capable of anything whatsoever.",64,3,2,5,4,5
+"Q: Why do we need two central newspapers, Pravda (Truth) and Izvestiya (News) if both are organs of the same Party? A: Because in Pravda there is no news, and in Izvestiya there is no truth.",54,3,3,5,5,4
+"Q: What is the difference between the Constitutions of the USA and USSR? Both guarantee freedom of speech. A: Yes, and the US Constitution also guarantees freedom after speech.",36,3,2,5,5,4
+"Q: Can a son of a General become a Marshal? A: No, because every Marshal also has a son.",24,3,2,5,5,5
+"Q: Why did you not broadcast for such a long time? A: We had to make some changes to our staff. The previous broadcaster, while reading an article that contained the words, ""Socialism is nothing as compared with communism,"" made a pause too long after the word ""nothing.""",59,2,2,4,3,4
+"Q: Does China have rockets powerful enough to reach the moon? A: They don't need rockets. If the Chinese communist Party ordered, their people just would step on each other's shoulders, and this way they could reach even the sun.",49,2,1,3,3,2
+"Q: Why do some people say that Hungarians love the Russians and hate the Americans? A: Because Russians helped Hungarians to get rid of one totalitarian rule, but Americans didn't help to get rid of the other.",45,2,2,4,4,3
+"Q: Is it true that American skyscrapers are the tallest in the world? A: Yes, it's true, but on the other hand the Soviet-made transistors are the largest in the world.",43,2,3,4,3,4
+"Q: Are the bedbugs also builders of socialism? A: Of course, in their veins flows the workers-and-peasants' blood.",29,2,2,4,5,2
+"Q: Why Lenin wore regular shoes, but Stalin wore boots? A: At Lenin's time, Russia was still only ankle-high in shit.",29,2,3,3,4,2
+"Q: When the elections were first held using the Soviet method? A: When Adam was electing his wife, and Eve her husband.",28,2,1,3,3,3
+"Q: What is the easiest way to explain the meaning of the word ""communism?"" A: By means of fists.",26,2,1,4,5,2
+"Q: Is it possible to build communism in America? A: It's possible, but who will we buy grain from?",25,2,2,3,4,2
+Q: is it possible to solve a problem which has no solution? A: We don't answer questions related to agriculture.,25,2,2,3,2,4
+Q: Why the answers of Armenian Radio are often stupid? A: Because these answers are invented not by Armenians.,24,2,1,3,2,3
+Q: What is the greatest achievement of Soviet agriculture? A: Sowing in the USSR and harvesting in America.,23,2,3,3,4,1
+"Q: Is there life on other planets? A: On other planets, there is also no life.",21,2,1,4,3,4
+"Q: Will people have money when communism is built? A: Some will, some will not.",20,2,1,3,2,3
+"Q: Under communism will we still have money? A: No, none of that either.",19,2,1,3,1,5
+Q: What is chaos? A: We do not comment on national economics.,16,2,2,4,3,4
+"Q: In our factory's mess hall, the tea is not sweet at all, while the mess manager says he puts sugar according to the prescribed dose. What shall we do? A: Try to stir your tea counterclockwise rather than clockwise.",51,1,2,2,2,1
+Q: Are there men who do not cheat on their wives when they are on prolonged business trips? A: Of course. Soviet cosmonauts and American astronauts.,34,1,2,2,1,3
+"Q: What is Sholokhov writing now? A: A crime novel titled ""How I Received the Nobel Prize in Literature.""",28,1,1,2,2,1
+Q: Is it possible in a socialist country to end up under a train? A: Easier than on a train.,25,1,2,2,2,2
+Q: What is cosmopolitan? A: Cosmonaut's deputy in political affairs.,18,1,1,2,2,2
+Q: When did kennedy get elected? A: John F. Kennedy 1961 presidential inauguration.,21,0,0,0,0,0
+Q: Who was the leader of the ussr in 1948? A: Joseph Stalin.,20,0,0,0,0,0
+Q: What is the national anthem of russia? A: National Anthem of Russia.,18,0,0,0,0,0
+Q: What else is there in orlando besides disney? A: Baldwin Park.,18,0,0,0,0,0
+Q: What war was george washington associated with? A: American Revolutionary War.,17,0,0,0,0,0
