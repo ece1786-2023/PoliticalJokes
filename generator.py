@@ -55,4 +55,4 @@ if __name__ == "__main__":
     parser.add_argument('--save', help='Default is False. When activated, save the output as csv file.', action='store_true')
     parser.add_argument("--save_path", help="the path for the output csv", type=str, default="generator_output/output.csv")
     arguments = parser.parse_args()
-    network = main(arguments)
+    main(arguments)
