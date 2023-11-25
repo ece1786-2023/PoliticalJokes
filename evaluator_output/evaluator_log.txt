@@ -107,3 +107,39 @@ weighted avg       0.50      0.47      0.48        30
 
 
 
+Experiment 2023-11-24 23:44:35
+example data ids:[2, 10, 38, 42]
+system prompt:
+### instruction ###
+Act as a Russian political joke evaluator. Evaluate the funniness of a political joke using an integer rating from 0 to 3 and provide explainations. 0 means the input is not a joke. 1 means the input is a joke but not funny. 3 means the input is very funny.
+### examples ###
+Example #1
+<user>: '''Q: Is it true that every Soviet soldier dreams of becoming a general? A: No, our soldiers are not that stupid. They know that generals may become MIA even in time of peace.'''
+<assistant>: '''This joke is very funny because it is easy to understand and plays on the absurdities and contradictions of the Soviet regime and its leadership, so the rating is 3.'''
+Example #2
+<user>: '''Q: Could an atomic bomb destroy our beloved town, Yerevan, with its splendid buildings and beautiful gardens? A: In principle, yes. But Moscow is by far a more beautiful city.'''
+<assistant>: '''This joke cannot be rated as 3 or 1, so the rating is 2.'''
+Example #3
+<user>: '''Q: Is there a difference between capitalism and communism? A: In principle, yes. In capitalism, man exploits man. In communism, it's the reverse.'''
+<assistant>: '''This joke is either too simple or too opaque or heavily reliant on insider knowledge, which undermines the comedic impact, so the rating is 1.'''
+Example #4
+<user>: '''Q: What two countries invaded poland in the beginning of ww2? A: Germany and Soviet Union.'''
+<assistant>: '''This is not a joke at all, so the rating is 0.'''
+system prompt tokens:350
+validation data ids:[0, 1, 3, 4, 5, 6, 7, 8, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 39, 40, 41, 43, 44, 45, 46, 47]
+model: gpt-4-1106-preview, temperature: 1, top_p: 1
+rmse: 0.6582805886043833
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         5
+           1       0.25      0.20      0.22         5
+           2       0.60      0.56      0.58        16
+           3       0.33      0.50      0.40         4
+
+    accuracy                           0.57        30
+   macro avg       0.55      0.57      0.55        30
+weighted avg       0.57      0.57      0.57        30
+
+
+
+
