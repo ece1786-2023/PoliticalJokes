@@ -1,11 +1,10 @@
-import openai
+from openai import OpenAI
 import os
 import pandas as pd
 import utils
 
 class Evaluator:
     def __init__(self, model="gpt-4-1106-preview", temperature=1, top_p=1, verbose=False, log_path="evaluator_output/evaluator_log.txt", example_ids=[2, 10, 38, 42]):
-        openai.api_key = os.getenv("OPENAI_API_KEY")
         self.model = model
         self.temperature = temperature
         self.top_p = top_p
@@ -32,7 +31,8 @@ class Evaluator:
             utils.log("system prompt tokens:" + str(utils.num_tokens_from_string(self.prompt)), self.log_path)
 
     def evaluate(self, input, verbose=False):
-        response = openai.ChatCompletion.create(
+        client = OpenAI()
+        response = client.chat.completions.create(
             model=self.model,
             messages=[
                 {
@@ -50,7 +50,7 @@ class Evaluator:
             frequency_penalty=0,
             presence_penalty=0
         )
-        content = response['choices'][0]['message']['content']
+        content = response.choices[0].message.content
         rating = int(content[content.find(" -> ") + 4])
         explanation = content[:content.find(" -> ")]
         if verbose:
