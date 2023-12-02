@@ -54,6 +54,6 @@ class Evaluator:
         rating = int(content[content.find(" -> ") + 4])
         explanation = content[:content.find(" -> ")]
         if verbose:
-            print("Rating: " + rating)
+            print("Rating: " + str(rating))
             print("Explanation: " + explanation)
         return rating, explanation
