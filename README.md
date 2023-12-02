@@ -12,22 +12,29 @@ There are some previous works that have already explored humor generation and ev
 
 We have created a web-based user interface based on Gradio. It consists of two parts: user input and model output. Users need to enter the keywords for the joke required by our model in a textbox. Our model will generate a political joke based on these keywords. Subsequently, our model will rate this joke and provide a detailed interpretation and evaluation of the joke.
 
+Examples:
+
+![Alt text](output-2023-12-02-134859.png)
+
+![Alt text](output-2023-12-02-140218.png)
+
+![Alt text](output-2023-12-02-135218.png)
+
 ## Architecture
 
 To achieve the purpose of our project, we have divided the operation of the model into two parts: Generator and Evaluator. Both Generator and Evaluator produce results based on GPT-4. The details are shown in the figure:
+
 ![Alt text](Architecture.png)
+
 As shown in the figure, the flow starts with a series of keywords input from users, which will prompt the generator to create a joke based on these words. Then the generated joke will be sent to the evaluator for funiness rating. Finally, both the joke and the rating will be output to users.
 
 ## Setup
 This is a python based project. Python version 3.8 or higher is mandatory.
 * Install the required packages by using the following commands in the terminal(MacOS) or Command Prompt(Windows):
-  * pip install gradio
-  * pip install pandas
-  * pip install tiktoken
-  * pip install --upgrade openai
+  * `pip install --upgrade gradio pandas tiktoken openai`
     * (You are required to set up an API key to run this project. Please follow Step 2 in https://platform.openai.com/docs/quickstart?context=python.)
-* run the command:
-  * python3 main.py
+* Run the command inside `PoliticalJokes` directory:
+  * `python3 main.py`
 * The project would be running locally. Use the link for local URL to access the User Interface.
 
 ## References
