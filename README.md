@@ -37,6 +37,17 @@ This is a python based project. Python version 3.8 or higher is mandatory.
   * `python3 main.py`
 * The project would be running locally. Use the link for local URL to access the User Interface.
 
+## File Structure
+* `main.py`: contains the UI that calls generator and evaluator
+* `generator.py`: code for the generator
+* `evaluator.py`: code for the evaluator
+* `success_metrics.ipynb`: script to assess the whole system
+* `success_metrics_output`: folder contains outputs in the final assessment
+* `generator_output`: folder contains generator outputs in development
+* `evaluator.ipynb`: script to access evaluator performance in development
+* `evaluator_output`: folder contains evaluator outputs in development
+* `data`: folder contains raw data, processed data and the data processing script
+
 ## References
 
 - [1] B. Wang, X. Wu, X. Liu, J. Li, P. Tiwari, and Q. Xie, “Can Language Models Make Fun? A Case Study in Chinese Comical Crosstalk”, 36th Conference on Neural Information Processing Systems Track on Datasets and Benchmarks, 2 Jul 2022.
